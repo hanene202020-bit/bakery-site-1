@@ -1,0 +1,218 @@
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>The golden loaf </title>
+
+<style>
+body {
+    font-family: Arial;
+    direction: rtl;
+    margin: 0;
+    background-color: #f5f0e6;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    background-color: #c9a27e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    animation: fadeDown 1s ease;
+}
+
+/* NAV */
+nav {
+    background-color: #b58b6a;
+    text-align: center;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* BOX */
+.box {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ddd;
+    animation: fadeUp 0.8s ease;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.item {
+    text-align: center;
+    animation: zoomIn 0.8s ease;
+}
+
+.gallery img {
+    width: 200px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+}
+
+/* BUTTON */
+.order {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background-color: #b58b6a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.order:hover {
+    background-color: #a07759;
+    transform: scale(1.05);
+}
+
+/* CART BUTTON */
+.cart {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #b58b6a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeDown {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes zoomIn {
+    from {transform: scale(0.9); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>الرغيف الذهبي 🍞✨</h1>
+    <p>مخبوزات طازجة يوميًا</p>
+
+    <a class="cart" href="https://wa.me/966598763215">
+        🛒 اطلب الآن
+    </a>
+</header>
+
+<nav>
+    <a href="#about">من نحن</a>
+    <a href="#history">التاريخ</a>
+    <a href="#gallery">المعرض</a>
+    <a href="#contact">تواصل</a>
+</nav>
+
+<!-- ABOUT -->
+<div id="about" class="box">
+    <h2>من نحن</h2>
+    <p>نقدم أفضل المخبوزات الطازجة بجودة عالية وطعم رائع.</p>
+</div>
+
+<!-- HISTORY -->
+<div id="history" class="box">
+    <h2>تاريخ المخبوزات 📜🍞</h2>
+    <p>
+        بدأت صناعة الخبز منذ آلاف السنين عند الإنسان القديم باستخدام الحبوب والماء.
+    </p>
+    <p>
+        ثم تطورت عبر الحضارات حتى أصبحت المخبوزات اليوم فن وطعم عالمي.
+    </p>
+</div>
+
+<!-- GALLERY -->
+<div id="gallery" class="box">
+    <h2>المعرض 📸</h2>
+
+    <div class="gallery">
+
+        <div class="item">
+            <img src="https://i.ibb.co/39Lz586X/IMG-0425.jpg">
+            <a class="order" href="https://wa.me/966598763215">اطلب الآن</a>
+        </div>
+
+        <div class="item">
+            <img src="https://i.ibb.co/hJ8QhP3N/IMG-0416.jpg">
+            <a class="order" href="https://wa.me/966598763215">اطلب الآن</a>
+        </div>
+
+        <div class="item">
+            <img src="https://i.ibb.co/8gGrFWMq/IMG-0423.jpg">
+            <a class="order" href="https://wa.me/966598763215">اطلب الآن</a>
+        </div>
+
+        <div class="item">
+            <img src="https://i.ibb.co/7dzvLbWF/IMG-0422.jpg">
+            <a class="order" href="https://wa.me/966598763215">اطلب الآن</a>
+        </div>
+
+        <div class="item">
+            <img src="https://i.ibb.co/CKpS4b18/IMG-0421.jpg">
+            <a class="order" href="https://wa.me/966598763215">اطلب الآن</a>
+        </div>
+
+        <div class="item">
+            <img src="https://i.ibb.co/KchGR3q1/IMG-0420.jpg">
+            <a class="order" href="https://wa.me/966598763215">اطلب الآن</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="box">
+    <h2>تواصل معنا 📞</h2>
+    <p>📞 0598763215</p>
+    <p>📍 جدة - السعودية</p>
+
+    <a class="order" href="tel:0598763215">اتصال</a>
+    <a class="order" href="https://wa.me/966598763215">واتساب</a>
+</div>
+
+<footer>
+    جميع الحقوق محفوظة © الرغيف الذهبي
+</footer>
+
+</body>
+</html>
